@@ -1,18 +1,23 @@
 import React from 'react';
+import coverImage from '../assets/cover.jpg';
 
 const Pengantar = () => {
   return (
     <div className="mx-auto max-w-6xl p-10 my-5">
       <h1 className="text-2xl font-bold mb-8 text-center">Pengantar</h1>
-      <section className="relative bg-cover bg-center h-96" style={{ backgroundImage: 'url("/path/to/image.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-4xl text-white font-bold">Pengantar Satgas PPKS</h1>
-          <p className="mt-4 text-white">Isi kata pengantar dari Satgas PPKS...</p>
-        </div>
-      </section>
+      <section
+      className="relative bg-cover bg-center h-96"
+      style={{
+        backgroundImage: `url(${coverImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+    </section>
 
       <section className="p-10">
+        
         <h2 className="text-2xl font-bold mb-4">Deskripsi</h2>
         <p className="text-gray-700">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac ex nec felis faucibus ullamcorper. Ut
